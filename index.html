@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Hessler Neighborhood Association</title>
+		<meta charset="UTF-8"/>
+		<link rel="stylesheet" type="text/css" href="latex.css">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" integrity="sha256-5uKiXEwbaQh9cgd2/5Vp6WmMnsUr3VZZw0a8rKnOKNU=" crossorigin="anonymous">
+		<style>
+			body {
+				background-color: rgb(244,238,225);
+			}
+			
+			.splide__slide img {
+				width: 100%;
+				height: auto;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div style="text-align:center;">
+			<img src="img/hessler-road-historic-district.png" alt="Hessler Road Historic District" style="width:12vw"/>
+		</div>
+	
+		<h1 style="margin-top:0;">Welcome to the website of the Hessler Neighborhood Association! </h1>
+		<p>
+			The Hessler Court and Hessler Road Historic District, Cleveland’s first Historic District, is home of the last woodblock road in Cleveland, listed on the National Register of Historic Places. The Hessler neighborhood hosted the annual Hessler Street Fair for fifty years to raise awareness about the preservation of this architecturally and culturally significant neighborhood, under constant threat due to institutional expansion.
+		</p>
+		
+
+		
+		<section id="image-carousel" class="splide" aria-label="Beautiful Images"  data-splide='{"type":"loop", "autoplay":"true"}'>
+			<div class="splide__track">
+				<ul class="splide__list">
+					<li class="splide__slide">
+						<img src="img/IMG_1806.jpeg" alt="">
+					</li>
+					<li class="splide__slide">
+						<img src="img/IMG_7595.jpeg" alt="">
+					</li>
+					<li class="splide__slide">
+						<img src="img/IMG_7635.jpeg" alt="">
+					</li>
+				</ul>
+			</div>
+		</section>
+		
+		<p>Contact us: <a href="mailto:hesslerstreet@gmail.com">hesslerstreet@gmail.com</a></p>
+		
+
+	</body>
+	
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/js/splide.min.js" integrity="sha256-FZsW7H2V5X9TGinSjjwYJ419Xka27I8XPDmWryGlWtw=" crossorigin="anonymous"></script>
+	
+	<script>
+		new Splide( '#image-carousel' ).mount();
+	</script>
+
+</html>
