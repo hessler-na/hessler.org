@@ -1,9 +1,0 @@
----
-title: "History"
-description: "History about the Hessler Court and Hessler Road Historic District and the HNA"
----
-
-import Figure from "@components/mdx/Figure.astro"
-
-The Hessler Court and Hessler Road Historic District, Cleveland’s first Historic District, is home of the last woodblock road in Cleveland, listed on the National Register of Historic Places. The Hessler neighborhood hosted the annual Hessler Street Fair for fifty years to raise awareness about the preservation of this architecturally and culturally significant neighborhood, under constant threat due to institutional expansion.
-{/* TODO: more history !!!! */}
