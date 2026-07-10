@@ -36,8 +36,8 @@ export const sideyConfig = {
     { label: "Hessler Street Fair", href: "/street-fair" },
     { label: "History", href: "/history" },
     { label: "Donate", href: "/donate" },
-    { label: "Blog", href: "/blog" },
-    { label: "RSS", href: "/rss.xml" },
+   // { label: "Blog", href: "/blog" },
+   // { label: "RSS", href: "/rss.xml" },
   ],
 }
 
