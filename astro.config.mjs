@@ -69,7 +69,7 @@ export default defineConfig({
     plugins: [tailwindcss()],
   },
 
-  adapter: cloudflare({
-    imageService: { build: "compile", runtime: "cloudflare-binding" },
+  adapter: process.env.NODE_ENV === "development" ? undefined : cloudflare({
+    imageService: { build: "compile" },
   }),
 })
