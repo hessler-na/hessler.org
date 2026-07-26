@@ -1,0 +1,67 @@
+[
+  {
+    "id": "real",
+    "question": "Is this real?",
+    "answer": "Yes, it is. Really."
+  },
+  {
+    "id": "why",
+    "question": "Why is it coming back?",
+    "answer": "The Street Fair began as a block party, and evolved in 1969 into a fundraising effort to help pay for legal support for Hessler tenants on rent strike. In the years that followed it became a celebration of Cleveland’s counterculture, art, music and community. The Street Fair was instrumental in saving the street from destruction and led to Hessler’s recognition as a Landmark District in 1975. The original incarnation of the Street Fair persisted until 1984, and the fair was resurrected in 1995. We are bringing it back again today to support Hessler tenants through a celebration of our community traditions, the landmark buildings, and those who live here."
+  },
+  {
+    "id": "stop",
+    "question": "Why did it have to stop?",
+    "answer": "Due to a waning volunteer base, the 50th Anniversary Street Fair in 2019 was billed as “the last” in some quarters. COVID made sure of that, at least for a while. However, in recent years, the Hessler Neighborhood Association has gained new membership from the local community, and Hessler residents across generations have been working together to bring it back. We hosted two smaller events for practice in 2022 (Folk on Hessler) and 2023 (Hessler Homecoming) and our playbook is now in order. We even have the lemonade recipe."
+  },
+  {
+    "id": "expect",
+    "question": "What can we expect?",
+    "answer": "Think of this as a “soft relaunch” of the fair, with much of what you remember, with an emphasis on Quality over Quantity. The Committee believes that the fair had gotten a little too big, too commercial, too mainstream. So we’re toning down a little, with only local fine artists and makers, locally owned and operated businesses, and a more laid-back atmosphere."
+  },
+  {
+    "id": "why-october",
+    "question": "Why October instead of May?",
+    "answer": "Frankly, the fair was at a terrible time. The last 20 years the fair was held during the weekend of CWRU’s Graduation Ceremonies, as well as the Asian Festival and a few other events. There was no parking, streets were filled with out-of-towners attending their children’s graduations, plus the weather was often cold and rainy. The first weekend of October, however, is traditionally warmer and drier than May, school will be in session which allows underclassmen participation, and there are no other major events happening in the area or on campus that weekend."
+  },
+  {
+    "id": "lemonade",
+    "question": "Will there be lemonade?",
+    "answer": "Yes! The original Hessler recipe will be there, as is tradition."
+  },
+  {
+    "id": "music",
+    "question": "Will there be live music?",
+    "answer": "Yes! A list of bands will be released shortly."
+  },
+  {
+    "id": "multi-day",
+    "question":  "Why is it only one day?",
+    "answer": "The paperwork, logistics, and costs for a multi day event are currently prohibitive for the budget. But the future is a big place. If you’re interested in donating to the Neighborhood Association to facilitate future street fairs, we’d be very grateful. "
+  },
+  {
+    "id": "runners",
+    "question":  "Who is running it?",
+    "answer": "The event, as in the past, is being organized by the Hessler Neighborhood Association and a committee of current and former residents and friends of the street."
+  },
+  {
+    "id": "involvement",
+    "question": "How can I get involved?",
+    "answer": "See above for our applications for vendors, volunteers, and sponsors."
+  },
+  {
+    "id": "differences",
+    "question": "What will be different about it?",
+    "answer": "If you think about it, every single year the Fair was held, there was something different. That’s what made the Hessler Street Fair stand out among Cleveland’s annual events. "
+  },
+  {
+    "id": "app-deadline",
+    "question": "When is the application deadline?",
+    "answer": "August 16th for artists and August 23rd for nonprofits and local businesses, but we strongly suggest you get in sooner! Reviews will be sent out by the end of August."
+  },
+  {
+    "id": "service-hours",
+    "question": "Can I get service hours for volunteering?",
+    "answer": "Yes! HNA is a 501(c)(3) organization, and we are happy to sign off on service hours. We are an approved volunteering organization through CWRU’s Center for Civic Engagement and Learning (CCEL) so we can easily support service hours for students in Greek Life. We are happy to have you!"
+  }
+]
