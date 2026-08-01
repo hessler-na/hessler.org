@@ -35,6 +35,16 @@
     "answer": "Yes! A list of bands will be released shortly."
   },
   {
+  	"id": "alcohol",
+  	"question": "Will there be beer/alcohol?",
+  	"answer": "No alcohol sales will occur. The organizing committee disliked the idea when proposed, and the increased liability and risk (and all associated costs) mean that is is unlikely to ever happen, even in potential future years."
+  },
+  {
+  	"id": "poetry",
+  	"question": "Will there be a poetry contest?",
+  	"answer": "No contest this year, but there will be an open mic at the Ford end of the street. More information coming soon."
+  },
+  {
     "id": "multi-day",
     "question":  "Why is it only one day?",
     "answer": "The paperwork, logistics, and costs for a multi day event are currently prohibitive for the budget. But the future is a big place. If you’re interested in donating to the Neighborhood Association to facilitate future street fairs, we’d be very grateful. "
@@ -43,6 +53,11 @@
     "id": "runners",
     "question":  "Who is running it?",
     "answer": "The event, as in the past, is being organized by the Hessler Neighborhood Association and a committee of current and former residents and friends of the street."
+  },
+  {
+  	"id": "art",
+  	"question": "Who created the art?",
+  	"answer": "The art is by Zoe Peenstra and Sydney Slacas."
   },
   {
     "id": "involvement",
