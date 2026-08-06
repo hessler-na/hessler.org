@@ -3,7 +3,8 @@ title: "Contact"
 description: "Contact the Hessler Neighborhood Association"
 ---
 
-<form method="POST" action="https://contact-form-worker.hesslerstreet.workers.dev" class="flex flex-col gap-4 max-w-md">
+<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+<form id="contact-form" method="POST" action="https://contact-form-worker.hesslerstreet.workers.dev" class="flex flex-col gap-4 max-w-md" target="dummyframe">
   <div class="flex flex-col gap-1">
     <label for="name" class="font-medium">Name</label>
     <input type="text" id="name" name="name" required class="border rounded px-3 py-1 bg-transparent" />
@@ -20,4 +21,5 @@ description: "Contact the Hessler Neighborhood Association"
   <div class="cf-turnstile" data-sitekey="0x4AAAAAAEIrM8Pm1s7hzGv5"></div>
   <button type="submit" class="bg-primary text-primary-foreground rounded px-4 py-2 w-max font-medium">Send</button>
 </form>
+
 <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
