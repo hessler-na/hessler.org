@@ -35,6 +35,11 @@
     "answer": "Yes! A list of bands will be released shortly."
   },
   {
+    "id": "band",
+    "question": "Can my band play?",
+    "answer": "Unfortunately our band list is already finalized, however there will be an open mic at the Ford end of the street. More information coming soon."
+  },
+  {
   	"id": "alcohol",
   	"question": "Will there be beer/alcohol?",
   	"answer": "No alcohol sales will occur. The organizing committee disliked the idea when proposed, and the increased liability and risk (and all associated costs) mean that is is unlikely to ever happen, even in potential future years."
