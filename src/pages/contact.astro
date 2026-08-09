@@ -1,0 +1,146 @@
+---
+import SinglePage from "@layouts/pages/SinglePage.astro"
+
+const page = {
+  data: {
+    title: "Contact",
+    description: "Contact the Hessler Neighborhood Association",
+  },
+}
+---
+
+<SinglePage frontmatter={page}>
+  <form
+    id="contactForm"
+    method="POST"
+    action="https://contact-form-worker.hesslerstreet.workers.dev"
+  >
+    <label for="name">Name</label>
+    <input type="text" id="name" name="name" required />
+
+    <label for="email">Email</label>
+    <input type="email" id="email" name="email" required />
+
+    <label for="message">Message</label>
+    <textarea id="message" name="message" required></textarea>
+
+    <label for="mood" class="mood">Mood (leave blank)</label>
+    <input
+      type="text"
+      id="mood"
+      name="mood"
+      tabindex="-1"
+      autocomplete="off"
+      class="mood"
+    />
+
+    <div class="cf-turnstile" data-sitekey="0x4AAAAAAEIrM8Pm1s7hzGv5"></div>
+    <button type="submit" class="button">Send</button>
+  </form>
+
+  <div id="successMessage" class="formMessage hidden">
+    <span>Thank you for your message. We will get back to you soon.</span>
+  </div>
+  <div id="errorMessage" class="formMessage hidden">
+    <span>There was an error sending your message. Please try again later.</span
+    >
+  </div>
+
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js"
+    async
+    defer></script>
+
+  <script is:inline>
+    document.addEventListener("DOMContentLoaded", () => {
+      const contactForm = document.querySelector("#contactForm")
+      const successMessage = document.querySelector("#successMessage")
+      const errorMessage = document.querySelector("#errorMessage")
+
+      if (contactForm) {
+        contactForm.addEventListener("submit", async (e) => {
+          e.preventDefault()
+          errorMessage.classList.add("hidden")
+
+          try {
+            const res = await fetch("https://contact.zephnet.biz", {
+              method: "POST",
+              body: new FormData(e.target),
+            })
+
+            if (res.ok) {
+              contactForm.classList.add("hidden")
+              successMessage.classList.remove("hidden")
+            } else {
+              errorMessage.classList.remove("hidden")
+            }
+          } catch (err) {
+            console.error(err)
+            errorMessage.classList.remove("hidden")
+          }
+        })
+      }
+    })
+  </script>
+</SinglePage>
+
+<style>
+  #contactForm input,
+  #contactForm label,
+  #contactForm textarea {
+    display: block;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 4px;
+    font-size: 18px;
+    border: 0 none;
+  }
+
+  #contactForm label {
+    font-weight: bold;
+  }
+
+  #contactForm input,
+  #contactForm textarea {
+    border: 2px solid #d5c4a1;
+    margin: 5px 0 15px;
+    padding: 5px;
+  }
+
+  #contactForm textarea {
+    height: 16ch;
+  }
+
+  #contactForm button.button {
+    display: block;
+    margin: 15px 0 30px;
+  }
+
+  #contactForm label.mood {
+    /* honeypot field */
+    display: none;
+  }
+
+  .formMessage span {
+    padding: 20px;
+    font-size: 18px;
+    display: inline-block;
+    border-size: 1px;
+    border-style: solid;
+    border-radius: 4px;
+  }
+
+  #successMessage {
+    border-color: #427b58;
+    color: #427b58;
+  }
+
+  #errorMessage {
+    border-color: #9d0006;
+    color: #9d0006;
+  }
+
+  .hidden {
+    display: none;
+  }
+</style>
