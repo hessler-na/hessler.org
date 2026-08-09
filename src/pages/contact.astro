@@ -24,15 +24,7 @@ const page = {
     <label for="message">Message</label>
     <textarea id="message" name="message" required></textarea>
 
-    <label for="mood" class="mood">Mood (leave blank)</label>
-    <input
-      type="text"
-      id="mood"
-      name="mood"
-      tabindex="-1"
-      autocomplete="off"
-      class="mood"
-    />
+    <input type="text" name="mood" tabindex="-1" autocomplete="off" class="hidden">
 
     <div class="cf-turnstile" data-sitekey="0x4AAAAAAEIrM8Pm1s7hzGv5"></div>
     <button type="submit" class="button">Send</button>
@@ -42,8 +34,7 @@ const page = {
     <span>Thank you for your message. We will get back to you soon.</span>
   </div>
   <div id="errorMessage" class="formMessage hidden">
-    <span>There was an error sending your message. Please try again later.</span
-    >
+    <span>There was an error sending your message. Please try again later.</span>
   </div>
 
   <script
