@@ -63,7 +63,7 @@ const page = {
           errorMessage.classList.add("hidden")
 
           try {
-            const res = await fetch("https://contact.zephnet.biz", {
+            const res = await fetch("https://contact-form-worker.hesslerstreet.workers.dev", {
               method: "POST",
               body: new FormData(e.target),
             })
