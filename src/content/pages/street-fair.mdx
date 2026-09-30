@@ -2,21 +2,41 @@
 title: ""
 description: "All about the Hessler Street Fair"
 ---
-import { Image } from 'astro:assets';
-import hsf from '../img/HSF_DESIGN_SOCIALS_BANNER_TRANSPARENT_2026.png';
 
-<Image alt="Hessler Street Fair. Saturday, October 3rd, 12 to 7 pm in the heart of University Circle" src={hsf} style="--tw-shadow: 0 0 #0000;"/>
+import {Image} from 'astro:assets';
+import hsf from '../img/HSF_DESIGN_SOCIALS_BANNER_TRANSPARENT_2026.png';
+import SponsorLogos from '../../components/section/SponsorLogos.astro';
+import caseLogo from '../img/sponsors/case.png';
+import jollyLogo from '../img/sponsors/jolly.jpg';
+import StreetFairFaq from '../../components/section/StreetFairFaq.astro';
+import macsLogo from '../img/sponsors/macs.jpg';
+
+
+<Image alt="Hessler Street Fair. Saturday, October 3rd, 12 to 7 pm in the heart of University Circle" src={hsf}/>
 
 The Hessler Neighborhood Association is pleased to announce the return of the Hessler Street Fair! This one-day event will occur on Saturday, October 3rd from noon until 7pm in the heart of University Circle. Featuring music, fine art, food, lemonade, knowledge and inspiration, the Fair will appeal to generations young and old. We look forward to seeing you on the street.
 
 [FAQ](#faq)
 
-[Band List](#band-list)
+[Band list](#band-list)
 
-[Merch Store](https://www.eventeny.com/company/?c=537489)
+[Vendor list](#vendors)
+
+[Merch store](https://www.eventeny.com/company/?c=537489)
 
 ## Volunteer applications
 [Apply here!](https://docs.google.com/forms/d/e/1FAIpQLSct13XKAu8Tsmd-Wb54PlHmfC6tLV3Xn0j_BrLmvELHfEfOmA/viewform)
+
+## Sponsors
+Thank you to our sponsors!
+
+<SponsorLogos
+    sponsors={[
+        {src: caseLogo, alt: "Case Western Reserve University Office of Government and Community Relations"},
+        {src: jollyLogo, alt: "The Jolly Scholar"},
+        {src: macsLogo, alt: "Mac's Backs Books on Coventry"}
+    ]}
+/>
 
 
 ## Sponsorships
@@ -65,7 +85,56 @@ The Hessler Neighborhood Association is pleased to announce the return of the He
 > Hello! 3D is like a weird experiment that has gone right. A seven-piece from Cleveland, Ohio whose musical passport is filled with stamps from Peru, Colombia, and other corners of the psychedelic globe.
 
 
-import StreetFairFaq from '../../components/section/StreetFairFaq.astro';
+## Vendors
+- Alpha Apartments
+- [Apple & Spider Vintage Co.](http://NathanMelaragno.com)
+- [Beth Lewin Pottery](https://www.potterybybethlewin.com/)
+- [Birdtown Botanical Oddities](http://instagram.com/birdtownbotanicaloddities)
+- [Blank Easel Clothing](http://www.blankeaselclothing.com)
+- [Blaze Gourmet](http://www.BlazeGourmet.com)
+- Blue Carolina Designs
+- Body 2 Body EMPRESS
+- [Brian Asquith Art](https://www.britishbrian.com/)
+- [Chrysalis Artist Studios Collective](https://chrysalisartiststudios.com/)
+- [Cosmic Crystal Clouds](http://CosmicCrystalClouds.com)
+- Created for YOU!
+- CWRU Office of Government & Community Relations
+- [Dark Skye Studios](https://www.instagram.com/darkskyestudios)
+- Dugway Brook Macrame
+- [ELM Designs](https://elmdesigncle.wixsite.com/welcome)
+- [Free Bird Jewelry](https://www.instagram.com/free.bird.jewelry)
+- [Fuego Fermentations](http://www.fuegofermentations.com)
+- [Get the Flock Out of Cuyahoga](http://www.flocknocle.com)
+- [Glitter&Snark](https://www.instagram.com/glitterandsnark/)
+- [Guice Mann](http://www.guicemann.com)
+- Gutenberg Annex
+- [Henna by Eve](http://www.hennabyeve.com)
+- [Hoogs Made It](http://Hoogsmadeit.com)
+- [Hunger Network's The Fork](https://hungernetwork.org/)
+- [Images in Bloom Studio](http://Www.imagesinbloom.com)
+- [Into the Pines Jewelry](http://www.intothepinesjewelry.com)
+- [Kate Larkin Arts](https://www.flickr.com/people/kate_larkin_arts/)
+- [Lacorte Lampworking](https://www.instagram.com/lacorte_lampworking)
+- Lake Erie Folk
+- [Lake Witch](https://www.lakewitch.com/)
+- [Lapso's Metalworks](http://www.lapsometalworks.com)
+- League of Women Voters
+- [Magicatalog](https://magicatalog.bigcartel.com/)
+- [MaryHegartyDesigns Gourd Art](http://www.maryhegartydesigns.com)
+- [My Doods](https://www.facebook.com/MyDoodsCle#)
+- [Mystic Stone by Katelyn](http://Mysticstonebykatelyn.com)
+- [Nonlinear Nomad](https://nonlinear-nomad.square.site/)
+- [Preterm](http://Preterm.org)
+- [Reflecting Point Arts](http://www.reflectingpointarts.com)
+- [Sara Sew and Sew](https://www.etsy.com/shop/SaraSewandSewWIL)
+- [Snakes + Acey's](http://www.snakesandaceys.com)
+- [Taranis Works](http://www.taranisworks.com)
+- [The Letterboxing Club](https://www.instagram.com/cwru_letterboxing/)
+- The Nature Factory LLC
+- [Undivided Cleveland](http://Facebook.com/undividedcleveland)
+- [Venus in Aquarius Apothica](http://www.venusinaquariusapothica.com)
+- [Windsong, Cleveland's Feminist Chorus](http://www.windsongcleveland.org)
+- Knot Today Crochet
 
 ## FAQ
-<StreetFairFaq />
+<StreetFairFaq/>

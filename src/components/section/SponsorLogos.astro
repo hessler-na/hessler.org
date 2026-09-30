@@ -1,0 +1,39 @@
+---
+import { Image } from 'astro:assets';
+
+interface Sponsor {
+  src: ImageMetadata;
+  alt: string;
+}
+
+interface Props {
+  sponsors: Sponsor[];
+}
+
+const { sponsors } = Astro.props;
+
+const widthBase = 180;
+const scaleFactor = 0.525;
+
+const processedSponsors = sponsors.map(sponsor => {
+  const imageRatio = sponsor.src.width / sponsor.src.height;
+  const calculatedWidth = Math.pow(imageRatio, scaleFactor) * widthBase;
+  return {
+    ...sponsor,
+    width: Math.round(calculatedWidth),
+  };
+});
+---
+
+<div class="media-images media-images--config-dynamic flex flex-wrap items-center justify-center gap-4 py-0">
+  {processedSponsors.map((sponsor) => (
+    <div class="media-images__image-container">
+      <Image
+        src={sponsor.src}
+        alt={sponsor.alt}
+        width={sponsor.width}
+        class="media-images__image h-auto rounded-none transition-all duration-300"
+      />
+    </div>
+  ))}
+</div>
