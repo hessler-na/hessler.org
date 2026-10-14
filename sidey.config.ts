@@ -33,7 +33,7 @@ export const sideyConfig = {
   navigation: [
     { label: "Home", href: "/" },
     { label: "About", href: "/about" },
-    { label: "Hessler Street Fair", href: "/street-fair" },
+    { label: "Hessler Street Fair", href: "/26street-fair" },
     { label: "History", href: "/history" },
     { label: "Donate", href: "/donate" },
     { label: "Contact", href: "/contact" },
